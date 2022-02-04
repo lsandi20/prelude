@@ -1,0 +1,686 @@
+.container {
+  background-color: transparent;
+  width: 375px;
+  height: 100%;
+
+}
+
+.basecontainer {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+  width: 100%;
+  height: 350px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.headingBackground {
+  position: absolute;
+  background-color: #015274;
+  height: 330px;
+  width: 375px;
+  z-index: -1;
+}
+
+.appBarContainer{
+  width: 375px;
+  height: 56px;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+}
+
+.appBarImageContainer {
+  width: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ .appBarText{
+  font-size: 16px;
+  font-weight: 500;
+  color: #595959
+ }
+
+ .separator {
+   width: 100%;
+   height: 2px;
+   background-color: #EDEDED;
+   margin-bottom: 8px;
+   margin-top: 8px;
+ }
+
+ .targetImage {
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
+ .donationSummaryContainer{
+   background-color: #0275A6;
+   padding: 30px 25px;
+   height: 140px;
+   border-radius: 20px;
+   color:white;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+
+ .donationSummaryAmount{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.donationSummaryMessage{
+  display: flex;
+}
+
+.donationSummaryIcon{
+  width: 20px;
+  height: 20px;
+}
+
+.donationSummaryText{
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.programLPContainer{
+   padding: 30px 25px;
+   height: 72px;
+   border-radius: 20px;
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 2px 4px 20px 0px #00000012;
+}
+
+.programLPItem{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.programLPSeparator{
+  width: 1px;
+  height: 32px;
+  background-color: #EDEDED;
+}
+
+.programLPItemIcon{
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+}
+
+.programLPItemText{
+  font-size: 14px;
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+.titleContainer {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.titleText {
+  font-size: 16px;
+  font-weight: 500;
+  color: #595959;
+}
+
+
+.carouselContainer {
+  width: 500px;
+  height: 217px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carouselItem {
+  width: 156px;
+  height: 208px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 2px 4px 20px 0px #00000012;
+}
+
+.carouselItemBackground {
+  position: absolute;
+}
+
+.carouselItemContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 138px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.carouselItemTextContainer {
+  width: 140px;
+  height: 62px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px) brightness(65%);
+  padding: 8px;
+}
+
+.carouselItemText {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+.carouselItemLocation {
+ display: flex;
+ align-items: center;
+}
+
+.carouselItemLocationText {
+  font-size: 10px;
+  color: white;
+  margin-left: 4px;
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  border: 1px solid #35ACDE;
+  border-radius: 8px;
+  height: 45px;
+  padding: 6px;
+}
+
+.tabItem {
+  display: flex;
+  width: 105px;
+  border-radius: 6px;
+  color: #0275A6;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabItemSelected {
+  background-color: #0275A6;
+  color: white;
+}
+
+.tabItemText {
+  font-size: 14px;
+  
+}
+
+
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.filterItem {
+  display: flex;
+  padding: 6px;
+}
+
+.filterItemIcon {
+  margin-right: 5px;
+}
+
+.filterItemText {
+  font-size: 12px;
+  color: #0275A6;
+}
+
+.profileSummaryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.profileSummaryItem {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  border-radius: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.profileSummaryItemTextContainer {
+  width: 230px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.profileSummaryItemText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.profileSummaryItemEmail {
+ display: flex;
+ align-items: center;
+}
+
+.profileSummaryItemEmailText {
+  font-size: 10px;
+  color: #999999;
+  margin-bottom: 8px;
+}
+
+.profileSummaryItemPhoto {
+  display: flex;
+  align-items: center;
+ }
+ 
+ .profileSummaryItemPhotoText {
+   font-size: 10px;
+   color: #0275A6;
+   margin-left: 4px;
+ }
+ 
+.inputContainer {
+  display: flex;
+  height: 180px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textInput {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #CCCCCC;
+  color: #999999;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+
+.transactionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 144px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.transactionItem {
+  display: flex;
+  height: 64px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 8px;
+  background-color: #F8F9FB;
+  align-items: center;
+}
+
+.transactionItemTextContainer {
+  width: 154px;
+  height: 41px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+
+.transactionItemText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.transactionItemDateText {
+  font-size: 10px;
+  color: #999999;
+  display: flex;
+  align-items: center;
+}
+
+.transactionItemNominal {
+  font-size: 14px;
+  color: #35ACDE;
+  font-weight: 500;
+  margin-left: 16px;
+}
+
+.separatorDot {
+  height: 4px;
+  width: 4px;
+  background-color: #EDEDED;
+  border-radius: 50%;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.transactionDoneContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 380px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.targetInfoTextContainer {
+  height: 103px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.targetInfoText {
+  font-size: 20px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.targetInfoLocation {
+  display: flex;
+  align-items: center;
+  margin-top:12px;
+}
+
+.targetInfoLocationText {
+  font-size: 12px;
+  color: #999999;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.targetInfoCategory{
+  font-size: 12px;
+  color: #35ACDE;
+  display: flex;
+  align-items: center;
+}
+
+.targetInfoSpecification {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #595959;
+}
+
+.donationBillContainer {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 54px;
+  width: 100%;
+}
+
+.donationBillText {
+  font-size: 16px;
+  color: #999999;
+}
+
+.donationBillNominal {
+  font-size: 24px;
+  font-weight: 500;
+  color: #0275A6;
+}
+
+.transactionInfoContainer {
+  margin-top: 16px;
+  margin-bottom: 14px;
+  display: flex;
+  height: 102px;
+  width: 100%;
+}
+
+.transactionInfoTextContainer {
+  font-size: 16px;
+  color: #999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+
+.transactionInfoDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transactionInfoDateItem {
+  margin-right: 24px;
+}
+
+.transactionInfoTextTitle {
+  font-size: 12x;
+  color: #999999;
+}
+
+.transactionInfoTextContent {
+  font-size: 14x;
+  color: #595959;
+  font-weight: 500px;
+}
+
+.transactionInfoTextStatus {
+  font-size: 14x;
+  color: #18CC76;
+  font-weight: 500;
+}
+
+.descriptionContainer {
+  height: max-content;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.descriptionTitle {
+  color: #595959;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.descriptionText {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 8px;
+  height: 54px;
+  overflow:hidden;
+}
+
+.descriptionTextExpanded {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 8px;
+  height: max-content;
+  overflow:visible;
+}
+
+.descriptionTextToggle {
+  color: #3b90df;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.descriptionTextToggleHidden {
+  display: none;
+}
+
+.conditionCarouselContainer {
+  width: 327px;
+  height: 109px;
+  overflow: hidden;
+  margin-bottom: 21px;
+}
+
+.conditionCarouselTitle {
+  font-weight: 500;
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 8px;
+}
+.conditionCarouselItemContainer {
+  display: flex;
+  width: max-content;
+  
+}
+
+.conditionCarouselItem {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 2px 4px 20px 0px #00000012;
+  margin-right: 8px;
+}
+
+.conditionCarouselItemBackground {
+  position: absolute;
+}
+
+
+
+.main {
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+  padding-top: 72px;
+  padding-bottom: 82px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: inherit;
+  display: flex;
+  flex: 1;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

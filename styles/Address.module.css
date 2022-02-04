@@ -30,42 +30,33 @@
   z-index: -1;
 }
 
-
-
-.userInfoContainer{
+.appBarContainer{
   width: 326px;
-  height: 64px;
   display: flex;
-  justify-content: space-between;
-}
-
-.userInfo{
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
-.userInfoText{
- width: 182px;
- height: 47px;
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- color: white;
-}
-.userInfoTextWelcome{
-  font-size: 14px;
+
+.appBarTextContainer{
+display: flex;
+justify-content: center;
+width: 100%;
  }
 
- .userInfoTextName{
-  font-size: 20px;
+ .appBarText{
+  font-size: 16px;
   font-weight: 500;
+  color: #595959;
  }
 
- .donationBasket {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+ .separator {
+   width: 100%;
+   height: 2px;
+   background-color: #EDEDED;
+   margin-bottom: 25px;
+   margin-top: 11.5px;
  }
+
 
 
  .donationSummaryContainer{
@@ -144,15 +135,11 @@
 }
 
 .titleText {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: #595959;
 }
 
-.titleButton {
-  font-size: 14px;
-  color: #3B90DF;
-}
 
 .carouselContainer {
   width: 500px;
@@ -226,52 +213,76 @@
   color: #0275A6;
 }
 
-.donationProgramContainer {
+.profileSummaryContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 272px;
   width: 100%;
   margin-bottom: 30px;
 }
 
-.donationProgramItem {
+.profileSummaryItem {
   display: flex;
   height: 80px;
   width: 100%;
   border-radius: 12px;
-  box-shadow: 2px 4px 20px 0px #00000012;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.donationProgramItemTextContainer {
+.profileSummaryItemTextContainer {
   width: 230px;
   height: 60px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-left: 16px;
 }
 
-.donationProgramItemText {
+.profileSummaryItemText {
   font-size: 14px;
   font-weight: 500;
   color: #595959;
 }
 
-.donationProgramItemLocation {
+.profileSummaryItemEmail {
  display: flex;
  align-items: center;
 }
 
-.donationProgramItemLocationText {
+.profileSummaryItemEmailText {
   font-size: 10px;
   color: #999999;
-  margin-left: 4px;
+  margin-bottom: 8px;
+}
+
+.profileSummaryItemPhoto {
+  display: flex;
+  align-items: center;
+ }
+ 
+ .profileSummaryItemPhotoText {
+   font-size: 10px;
+   color: #0275A6;
+   margin-left: 4px;
+ }
+ 
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  height: 384px;
+  justify-content: space-between;
+}
+
+.textInput {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #CCCCCC;
+  color: #999999;
+  border-radius: 8px;
+  padding: 12px;
 }
 
 .main {
